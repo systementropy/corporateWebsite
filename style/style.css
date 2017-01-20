@@ -1,3 +1,20 @@
+@font-face {
+  font-family: 'Glober';
+  src:url('../fonts/GloberTTFs/Glober_Regular.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Glober xBold';
+  src:url('../fonts/GloberTTFs/Glober_xBold.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Glober bold';
+  src:url('../fonts/GloberTTFs/Glober_Bold.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Geogrotesque';
+  src:url('../fonts/Geogrotesque/Geogtq-Sb.otf')  format('truetype');
+}
+
 body{
 	font-family: 'Glober';
 	color: #000;
