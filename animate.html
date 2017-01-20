@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+		.animateMainContainer{
+			position: relative;
+			z-index: 5;
+			background: radial-gradient( #020D17, #000000);
+		}
+		.animateN18{
+			position: absolute;
+			left: 50%;
+			top: 45%;
+			width: 0;
+			height: 0;
+			opacity: 0;
+			z-index: 9999;
+		}
+		.animateBg2{
+			z-index: 2;
+			opacity: 0;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+		}
+		.animateBg{
+			width: 100%;
+			height: 100%
+		}
+		.animateTextCont{
+			position: absolute;
+			top: 50%;
+			text-align: center;
+			z-index: 999;
+			font-family: 'Geogrotesque';
+			width: 100%;
+		}
+		.frontText h2{
+			color: #0033ff;
+			font-weight: bold;
+			font-size: 75px;
+			line-height: 90px;
+			margin: 0;
+		}
+		.frontText h1{
+			color: #AAA;
+			font-size: 115px;
+			font-weight: bold;
+			line-height: 125px;
+			margin: 0;
+			
+		}
+		.frontText1{opacity: 0;position: relative; top: 100px;}
+		.frontText2{opacity: 0;width: 100%;position: absolute;top: 100px;}
+	</style>
+</head>
+<body>
+	
+	<div class="animateMainContainer" >
+		<img src="images/Vector_Smart_Object.png" alt="" class="animateN18">
+		<img src="images/Layer_3.png" alt="" class="animateBg">
+		<img src="images/pixalate.png" alt="" class="animateBg2">
+		<div class="animateTextCont">
+			<div class="frontText frontText1">
+				<h2>225 MILLION</h2>
+				<h1>TV VIEWERS</h1>
+			</div>
+			<div class="frontText frontText2">
+				<h2>225 MILLION</h2>
+				<h1>DIGITAL VIEWERS</h1>
+			</div>	
+		</div>
+		<div class="homeIconCont centerIcon">
+			 <a href="home.html"><span class="badgeCont"><i class="fa fa-play"></i></span></a>
+		</div>
+	</div>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+    	$(document).ready(function(){
+    		var windowHeight = $(window).height();
+    		var windowWidth = $(window).width();
+    		$('.animateMainContainer').width(windowWidth);
+    		$('.animateMainContainer').height(windowHeight);
+    		$('.animateN18').animate({
+    			width: 280,
+    			height: 66,
+    			left:40+'%',
+    			opacity:1
+    		},
+    			2000, function() {
+    				$('.animateBg').animate({
+    					opacity: 0},
+    					2000, function() {
+    				});
+    				$('.animateBg2').animate({
+    					opacity: 1},
+    					2000, function() {
+    						$('.animateN18').animate({height:40,width:170,left:45+'%'},1000, function(){
+
+    						});
+    						$('.frontText1').animate({
+    							opacity: 1,
+    							top:0
+    						},1000, function() {
+    							$('.frontText1').animate({
+    								opacity: 0
+    							},
+    								2000, function() {
+    									$('.frontText2').animate({
+		    								opacity: 1,
+		    								top:0
+		    							},
+		    								1000, function() {
+		    									$('.homeIconCont.centerIcon').animate({
+		    											bottom:50,
+														height:50,
+														opacity:1
+		    										},
+		    										400, function() {
+		    											//$('.homeIconCont.centerIcon').children('a').children('.badgeCont').css('transform', 'roatate(720deg)');
+		    									});
+		    							});
+    							});
+    							
+    						});
+    				});
+    		});
+    	});
+    </script>
+</body>
+</html>

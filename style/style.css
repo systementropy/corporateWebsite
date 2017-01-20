@@ -43,6 +43,20 @@ body{
     width: 191%;
     background: #AAA;
 }
+.homeIconCont.centerIcon {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
+    height: 0;
+    opacity: 0;
+}
+.homeIconCont.centerIcon .badgeCont{
+	margin: 0;
+	transition: all 0.4s ease-in-out;
+	transform: rotate(0deg);
+}
 .centerIcon .badgeCont{
 	height: 50px;
     width: 50px;
@@ -53,6 +67,7 @@ body{
 }
 .centerIcon .badgeCont:hover i{
 	color: #F93133;
+	transform: rotate(360deg);
 }
 .centerIcon .badgeCont i{
 	font-size: 32px;
@@ -60,7 +75,7 @@ body{
     line-height: 40px;
     padding: 0 10px;
     margin: 6px 0px 0 6px;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.8s ease-in-out;
 }
 .hoverLinks {
     width: 100%;
@@ -100,7 +115,6 @@ body{
 	display: block;
 	clear: both;
 }
-.container{max-width: 1150px;margin:0 auto;}
 .contentTypeDiv{width:31%;float: left;height: 350px;background: rgba(0,0,0,0.3);margin:15px 1%;position: relative; overflow: hidden;}
 .contentTypeDiv p.front {
 	color: #F93133;
@@ -148,7 +162,7 @@ body{
 .footerSection{font-size: 14px;}
 .footerSection .width50>div{padding: 15px;}
 .container{
-	max-width: 80%;
+	max-width: 90%;
 	margin: 0 auto;
 }
 .containerHeaderLinks{
@@ -436,6 +450,7 @@ span.dottdBrder {
 .headerFiller {
     height: 65px;
 }
+.contentTypeDiv a{text-decoration:none;}
 .contentTypeDiv img {
     position: absolute;
     width: auto;
