@@ -238,6 +238,8 @@ a.subCrumbsLinks:hover{color: #0101cc;}
     background: rgba(255,255,255,0.95);
     z-index: 8888;
 }
+.headerPrimaryCont.animateHeader{background: transparent; color: #EEE; top: -65px;}
+.headerPrimaryCont.animateHeader 
 .headerPrimaryCont .pull-right a{
 	float: right;
 	margin: 10px 16px;
