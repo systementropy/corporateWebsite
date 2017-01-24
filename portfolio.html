@@ -722,13 +722,13 @@
 	<script>
 		$(document).ready(function() {
 			$('.open').on('click', function(e){
-				$('.headerMainContainer').show();
+				$('.headerMainContainer').animate({top: 0}, 200);
 				var maxWidth = $('.containerHeaderLinks').width();
 				$('.subCrumbsCont').css('left', $('.containerHeaderLinks').offset().left);
 				$('.subCrumbsCont').width(maxWidth);
 			});
 			$('.closeBtn').on('click',function(){
-				$('.headerMainContainer').hide();
+				$('.headerMainContainer').animate({top: -100+'%'}, 200);
 			});
 			var windowHeight = $(window).height();
 			$('.headerMainContainer').height(windowHeight);
