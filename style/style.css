@@ -156,7 +156,7 @@ body{
 	display: block;
 	clear: both;
 }
-.contentTypeDiv{width:31%;float: left;height: 350px;background: rgba(0,0,0,0.3);margin:15px 1%;position: relative; overflow: hidden;}
+.contentTypeDiv{width:31%;float: left;height: 420px;background: rgba(0,0,0,0.3);padding:0;margin:15px 1%;position: relative; overflow: hidden;}
 .contentTypeDiv p.front {
 	color: #F93133;
     position: absolute;
@@ -306,10 +306,66 @@ a.subCrumbsLinks:hover{
     background: rgba(255,255,255,0.95);
     z-index: 8888;
 }
+ .headerPrimaryCont .pull-left a.homeLogoA{
+    display: inline-block;
+    height: 45px;
+    margin-top: 10px;
+}
+.headerPrimaryCont .pull-left a.homeLogoA img{
+    -webkit-filter: grayscale(0%);
+    transition: all 0.2s ease-in-out;
+}
+.headerInner.closeBtn{
+    text-align: center;
+    height: 45px;
+    padding-top: 10px;
+    background: rgba(255, 51, 51, 0.3);
+    padding-bottom: 10px;
+    height: 55px;
+}
+.headerInner.closeBtn>span{
+    color: #CDCFD1;
+    height: 35px;
+    display: inline-block;
+    position: relative;
+    width: 260px;
+}
+.headerInner.closeBtn>span i{
+    position: absolute;
+    left: 0px;
+    font-size: 24px;
+    margin-right: 10px;
+    line-height: 33px;
+    display: inline-block;
+    top: 3px;
+    transition: all 0.2s ease-in-out;
+    transform: rotate(0deg);
+}
+.headerInner.closeBtn>span i:hover{
+    transform: rotate(90deg);
+}
+
+.headerInner.closeBtn>span img{
+    transition: all 0.2s ease-in-out;
+    -webkit-filter: grayscale(0%);
+}
+.headerInner.closeBtn>span img:hover{
+    transition: all 0.2s ease-in-out;
+    -webkit-filter: grayscale(100%);
+}
+.headerPrimaryCont .pull-left a.homeLogoA img{
+    transition: all 0.2s ease-in-out;
+    -webkit-filter: grayscale(0%);
+}
+.headerPrimaryCont .pull-left a.homeLogoA:hover img{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
 .headerPrimaryCont .pull-right a>i {
     font-size: 22px;
-    margin: 21px 8px;
+    margin: 21px 20px;
     color: #333;
+    transition: 0.2s all ease-in-out;
 }
 .headerPrimaryCont.animateHeader{background: transparent; color: #EEE; top: -65px;}
 .animateMainContainer{
@@ -372,8 +428,27 @@ a.subCrumbsLinks:hover{
 	font-size: 32px;
 	color: #666;
 }
-.headerPrimaryCont .open{background: transparent;  font-size: 32px;}
-
+.headerPrimaryCont .open{
+    background: transparent;  
+    font-size: 32px;
+    color: inherit;
+    transition: all 0.2s ease-in-out;
+}
+.headerPrimaryCont .open:hover{
+    color: #ff3333;
+}
+.headerPrimaryCont .pull-right a>i.fa-facebook:hover{
+    color: #4867AA;
+}
+.headerPrimaryCont .pull-right a>i.fa-twitter:hover{
+    color: #1DA1F2;
+}
+.headerPrimaryCont .pull-right a>i.fa-google-plus:hover{
+    color: #DB4437;
+}
+.headerPrimaryCont .pull-right a>i.fa-linkedin:hover{
+    color: #0177B5;
+}
 img{
 	max-width: 100%;
 	max-height: 100%;
@@ -498,7 +573,7 @@ ul.nav.nav-tabs.nav-lists li.active{
 	font-family: 'Glober bold';
 	font-size: 30px;
 }
-.portfolioMainCont{margin: 60px 0 100px;}
+.portfolioMainCont{margin: 120px 0 100px;}
 .portfolioMainCont .thumbnail .caption{color: #000;}
 .portfolioMainCont.small{height: 300px;}
 .portfolioMainCont .thumbnail.small{height: 250px;font-size: 100%;}
