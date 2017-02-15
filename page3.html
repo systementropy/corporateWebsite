@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="style/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style/style.css">
 	<style>
@@ -200,8 +201,8 @@
 			<div class="jumbotron" style="overflow: hidden;">
 				<img src="images/Untitled-3.png" alt="" style="max-width: 100%; max-height: none; position: absolute;top: -200px;">
 				<div class="inputCareerCont">
-					<input type="text" placeholder="E.G. WEB DESIGNER">
-					<input type="text" placeholder="E.G. NOIDA">
+					<input type="text" placeholder="E.G. WEB DESIGNER" style="width:400px;">
+					<input type="text" placeholder="E.G. NOIDA" style="width: 300px;margin: 0 50px;">
 					<input type="text" placeholder="E.G. SEARCH">
 				</div>
 			</div>
@@ -263,11 +264,7 @@
 			$('.headerMainContainer').height(windowHeight);
 			$('#headerLinkCont').height(windowHeight-80);
 			/*.headerCrumbs:hover .subCrumbsCont*/
-			$('.headerCrumbs').mouseenter(function(event) {
-				$(this).children('.subCrumbsCont').animate({param1: value1, param2: value2}, speed)
-			}).mouseleave(function(event) {
-				/* Act on the event */
-			});;
+			
 		});
 	</script>
 </body>

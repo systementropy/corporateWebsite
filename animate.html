@@ -26,7 +26,13 @@
 	<div class="headerMainContainer">
 		<div style="">
 			<div class="headerInner closeBtn" style="text-align: center;">
-				<span style="color: #CDCFD1;"><i style=" position: relative;top: 4px;font-size: 24px;margin-right: 10px; transform: scale(1,1.5);font-weight: lighter;color: #000;" class="fa fa-times"></i><img src="images/ut.png" alt=""></span>
+				<span style="color: #CDCFD1;">
+					<i style="top: 4px;font-size: 24px;margin-right: 10px; transform: scale(1,1.5);font-weight: lighter;color: #000;" class="fa fa-times"></i>
+					<span class="headerOpenHoverImgCont">
+						<img src="images/Network18-logo-white.png" alt="" class="onHover">
+						<img src="images/Network-18-logo.png" alt="" class="notOnHover">
+					</span>
+				</span>
 			</div>
 		</div>
 		
@@ -120,7 +126,7 @@
 		</div>
 	</div>
 	<div class="animateMainContainer" >
-		<img src="images/Vector_Smart_Object.png" alt="" class="animateN18">
+		<div class="animateN18"><img src="images/Network18-logo-white.png" alt="" class=""></div>
 		<img src="images/Layer_3.png" alt="" class="animateBg">
 		<img src="images/pixalate.png" alt="" class="animateBg2">
 		<div class="animateTextCont">
@@ -149,9 +155,9 @@
     		$('.animateMainContainer').width(windowWidth);
     		$('.animateMainContainer').height(windowHeight);
     		$('.animateN18').animate({
-    			width: 280,
+    			//width: 280,
     			height: 66,
-    			left:40+'%',
+    			//left:40+'%',
     			opacity:1
     		},
     			2000, function() {
@@ -163,7 +169,12 @@
     				$('.animateBg2').animate({
     					opacity: 1},
     					2000, function() {
-    						$('.animateN18').animate({height:40,width:170,left:45+'%',top:40+'%'},1000, function(){
+    						$('.animateN18').animate({
+    							height:40,
+    							//width:170,
+    							//left:45+'%',
+    							top:40+'%'
+    						},1000, function(){
 
     						});
     						$('.frontText1').animate({
