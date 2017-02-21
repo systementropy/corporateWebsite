@@ -3,13 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="style/bootstrap.css">
 	<link rel="stylesheet" href="style/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-		<div class="headerPrimaryCont container-fluid text-center">
-		<div class="col-md-5 text-left pull-left"><a class="homeLogoA" href="home.html"><img src="images/network18_icon.png" height="60px"></a></div>
+<div class="mainBodyContainerFull">
+	<div class="headerPrimaryCont container-fluid text-center">
+		<div class="col-md-5 text-left pull-left"><a class="homeLogoA" href="home.html"><img src="images/Network18logo_K.png" height="60px"></a></div>
 		<div class="col-md-2 text-center">
 			<button class="btn btn-large open">
 				<ul class="barsCont">
@@ -29,7 +30,13 @@
 	<div class="headerMainContainer">
 		<div style="">
 			<div class="headerInner closeBtn" style="text-align: center;">
-				<span style=""><i style="" class="fa fa-times"></i><img src="images/ut.png" alt=""></span>
+				<span style="color: #CDCFD1; cursor: pointer;">
+					<i style=" " class="">X</i>
+					<span class="headerOpenHoverImgCont">
+						<img src="images/Network18logo_W.png" alt="" class="notOnHover">
+						<img src="images/Network18logo_K.png" alt="" class="onHover">
+					</span>
+				</span>
 			</div>
 		</div>
 		
@@ -54,7 +61,7 @@
 						<span><img src="images/port.png" alt=""></span>
 						<p>Portfolio</p>
 						<div class="subCrumbsCont">
-							<a href="portfolio.html#portfolioNews" class="subCrumbsLinks">Newa</a>
+							<a href="portfolio.html#portfolioNews" class="subCrumbsLinks">News</a>
 							<a href="portfolio.html#portfolioEntertainment" class="subCrumbsLinks">Entertainment</a>
 							<a href="portfolio.html#portfolioDistribution" class="subCrumbsLinks">Distribution</a>
 							<a href="portfolio.html#portfolioMovies" class="subCrumbsLinks">Movies</a>
@@ -123,13 +130,21 @@
 		</div>
 	</div>
 	<div class="headerFiller"></div>
+	<div class="bottomSticky">
+		<a href="#">
+			<div><i class="fa fa-caret-up"></i></div>
+			TOP	
+		</a>
+		
+	</div>
 	<div class="portfolioContainer">
+		<div class="heroImgContainer">
+			<img src="images/news_hero_bg.jpg" alt="">
+		</div>
 		<div class="container">
-			<div class="heroImgContainer">
-				<img src="images/PORTFOLIO_hero.jpg" alt="">
-			</div>
+			
 			<div class="portfolioMainCont" id="portfolioNews">
-				<h1>NEWS</h1>
+				<h1>News</h1>
 				<ul class="nav nav-tabs nav-texts" role="tablist">
 					<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Business News</a></li>
 					<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">General News</a></li>
@@ -249,7 +264,7 @@
 				</ul>
 			</div>
 			<div class="portfolioMainCont" id="portfolioEntertainment">
-				<h1>ENTERTAINMENT</h1>
+				<h1>Entertainment</h1>
 				<ul class="nav nav-tabs nav-texts" role="tablist">
 					<li role="presentation" class="active"><a href="#genEnt" aria-controls="genEnt" role="tab" data-toggle="tab">General Entertainment</a></li>
 					<li role="presentation"><a href="#factEnt" aria-controls="factEnt" role="tab" data-toggle="tab">Factual Entertainment</a></li>
@@ -491,7 +506,7 @@
 				</ul>
 			</div>
  			<div class="portfolioMainCont" id="portfolioDistribution">
- 				<h1>DISTRIBUTION</h1>
+ 				<h1>Distribution</h1>
  				<div class="row distriTextCont">
  					<div class="pull-left text-center borderRight"><img src="images/indiacast_logo.jpg" alt=""></div>
  					<div class="pull-left distriText">
@@ -515,7 +530,7 @@
  				</div>
  			</div>
  			<div class="portfolioMainCont" id="portfolioMovies">
- 				<h1>DISTRIBUTION</h1>
+ 				<h1>Motion Pictures</h1>
  				<div><img src="images/viacom_logo.png" alt=""></div>
  				<div class="distriThmb">
  					<h3 class="text-left">Viacom18 Motion Pictures</h3>
@@ -532,7 +547,7 @@
  			</div>
  			<div class="portfolioMainCont" id="portfolioDigital">
 	 			<div class="distriThmb">
-	 				<h1>NETWORK18 DIGITAL</h1>
+	 				<h1>Network18 Digital</h1>
 		 			<p>Network18 Digital (N18D) is the digital arm of Network18, One of India’s most diversified media conglomerates with interests in television, Internet, films, e-commerce, magazines, mobile content and allied businesses. N18D is among the largest multi-platform destinations for objective breaking news, opinions, financial data and infotainment for the evolved digital news consumer. </p>
 					<p>Network18 Digital houses assets such as moneycontrol, firstpost, news18, khabar18 and pradesh18 and is constantly seeding new ideas to be the dominant force in the digital space. It caters to all sections of society, especially to the successful digital consumer and the millennials and_Generation Z users who access and consume content on the go. </p>
 					<h3 class="bgH3">CONTENT</h3>
@@ -650,7 +665,7 @@
 			
 			<div class="portfolioMainCont" id="portfolioPublishing">
 	 			<div class="">
-	 				<h1>PUBLISHING</h1>
+	 				<h1>Publishing</h1>
 					<div class="row">
 						<div id="carousel-example-publishing" class="carousel slide" data-ride="carousel" data-interval="false">
 							<div class="carousel-inner" role="listbox">
@@ -725,22 +740,48 @@
 	<div class="footerCredit">
 		Copyright 2015 Network18. All rights reserved.
 	</div>
+</div>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script>
 		$(document).ready(function() {
+			var maxWidth = 0;
 			$('.open').on('click', function(e){
-				$('.headerMainContainer').animate({top: 0}, 200);
-				var maxWidth = $('.containerHeaderLinks').width();
-				$('.subCrumbsCont').css('left', $('.containerHeaderLinks').offset().left);
-				$('.subCrumbsCont').width(maxWidth);
+				$('.headerMainContainer').animate({top: 0,left:0,width:100+'%',opacity:1}, 300, function(){
+					maxWidth = $('.containerHeaderLinks').width();
+					$('.subCrumbsCont').css('left', $('.containerHeaderLinks').offset().left);
+					$('.subCrumbsCont').width(maxWidth);
+					});
+				
 			});
 			$('.closeBtn').on('click',function(){
-				$('.headerMainContainer').animate({top: -100+'%'}, 200);
+				$('.headerMainContainer').animate({top: -101+'%',left:50+'%',width:0,opacity:0}, 300);
 			});
 			var windowHeight = $(window).height();
+			$('.mainBodyContainerFull').animate({
+				height: windowHeight+'px',
+				opacity:1
+				},
+				1000, function() {
+				
+			});
 			$('.headerMainContainer').height(windowHeight);
 			$('#headerLinkCont').height(windowHeight-80);
+			/*.headerCrumbs:hover .subCrumbsCont*/
+			var timeout = null;
+			$(window).scroll(function () {
+			    if (!timeout) {
+			        timeout = setTimeout(function () {
+			            clearTimeout(timeout);
+			            timeout = null;
+			            if ($(window).scrollTop() >= 1000) {
+			                $('.bottomSticky').fadeIn();
+			            }else{
+			            	$('.bottomSticky').fadeOut();
+			            }
+			        }, 250);
+			    }
+			});
 		});
 	</script>
 </body>

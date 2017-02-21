@@ -3,13 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="style/bootstrap.css">
 	<link rel="stylesheet" href="style/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style/style.css">
+	<style>
+		
+	</style>
 </head>
 <body>
+<div class="mainBodyContainerFull">
 	<div class="headerPrimaryCont container-fluid text-center">
-		<div class="col-md-5 text-left pull-left"><a class="homeLogoA" href="home.html"><img src="images/network18_icon.png" height="60px"></a></div>
+		<div class="col-md-5 text-left pull-left"><a class="homeLogoA" href="home.html"><img src="images/Network18logo_K.png" height="60px"></a></div>
 		<div class="col-md-2 text-center">
 			<button class="btn btn-large open">
 				<ul class="barsCont">
@@ -27,9 +31,15 @@
 		</div>
 	</div>
 	<div class="headerMainContainer">
-		<div style="">
+		 <div style="">
 			<div class="headerInner closeBtn" style="text-align: center;">
-				<span style=""><i style="" class="fa fa-times"></i><img src="images/ut.png" alt=""></span>
+				<span style="color: #CDCFD1; cursor: pointer;">
+					<i style=" " class="">X</i>
+					<span class="headerOpenHoverImgCont">
+						<img src="images/Network18logo_W.png" alt="" class="notOnHover">
+						<img src="images/Network18logo_K.png" alt="" class="onHover">
+					</span>
+				</span>
 			</div>
 		</div>
 		
@@ -54,7 +64,7 @@
 						<span><img src="images/port.png" alt=""></span>
 						<p>Portfolio</p>
 						<div class="subCrumbsCont">
-							<a href="portfolio.html#portfolioNews" class="subCrumbsLinks">Newa</a>
+							<a href="portfolio.html#portfolioNews" class="subCrumbsLinks">News</a>
 							<a href="portfolio.html#portfolioEntertainment" class="subCrumbsLinks">Entertainment</a>
 							<a href="portfolio.html#portfolioDistribution" class="subCrumbsLinks">Distribution</a>
 							<a href="portfolio.html#portfolioMovies" class="subCrumbsLinks">Movies</a>
@@ -123,13 +133,20 @@
 		</div>
 	</div>
 	<div class="headerFiller"></div>
+	<div class="bottomSticky">
+		<a href="#">
+			<div><i class="fa fa-caret-up"></i></div>
+			TOP	
+		</a>
+		
+	</div>
 	<div class="portfolioContainer corpMainCont">
 		<div class="container">
 			<div class="heroImgContainer">
 				<img src="images/abtsMain_hero.png" alt="">
 			</div>
 			<div class="row" id="compHist">
-				<h1 class="text-center">COMPANY HISTORY</h1>
+				<h1 >Company History</h1>
 				<div class="pull-left borderCont">
 					<span class="circle"></span>
 					<span class="dottdBrder"></span>
@@ -375,13 +392,13 @@
 				</div>
 			</div>
 			<div class="row boardDirMainCont" id="brdDirInt">
-				<h1 class="text-center">BOARD OF DIRECTORS</h1>
+				<h1 >Board Of Directors</h1>
 				<div class="col-md-3">
 					<img src="images/img1.png">
 					<h3>ADIL ZAINULBHAI</h3>
 					<p>Adil Zainulbhai is currently Chairman of Quality Council of India. He retired as Chairman of McKinsey India after 34 years at McKinsey, of which the last 10 years were spent in India. He has also co-edited the book, ‘Reimagining India’ which featured 60 authors including prominent businessmen, academics, economists, authors and journalists. The book has been #1 in the non-fiction category in India on its release and #2 on Amazon’s International Business List in the US. He grew up in Mumbai and graduated in Mechanical Engineering from the Indian Institute of Technology. He also has an MBA from Harvard Business School. Mr. Zainulbhai is very active in community and social causes.</p>
 					<img src="images/img2.png">
-					<h3>Rajiv Krishan Luthra</h3>
+					<h3>Rajiv K. Luthra</h3>
 					<p>Rajiv Krishan Luthra is the Founder and Managing Partner of Luthra & Luthra Law Offices one of the largest law firms in India. He has over 31 years of experience in advising clients on a vast range of commercial transactions including infrastructure projects. Mr. Luthra has been conferred with Alumni of Harvard Law School and a Fellow of the British Commerce Society and the Royal Geographical Society. Mr. Luthra is a member of SEBI’s High Level Committee for ‘Reviewing Insider Trading Regulations’ and SEBI’s Committee on ‘Rationalization of Investment Routes and Monitoring Foreign Por tfolio Investments’.</p>
 				</div>
 				<div class="col-md-3" style="padding-top: 200px;">
@@ -410,7 +427,7 @@
 				</div>
 			</div>
 			<div class="row globalPartnerMainContainer" id="globPartInt">
-				<h1>GLOBAL PARTNERS</h1>
+				<h1>Global Partners</h1>
 				<p>Network18 has partnerships with several leading global media players including Viacom in entertainment, CNN in English general news, CNBC in business news, A+E Networks in factual entertainment and Forbes in the  business magazine genre to provide best-in-class media offerings.</p>
 			</div>
 			<div class="row globalPartnerMainContainer portfolioMainCont">
@@ -486,41 +503,50 @@
 	<div class="footerCredit">
 		Copyright 2015 Network18. All rights reserved.
 	</div>
+	</div>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script>
 		$(document).ready(function() {
+			//console.log($('body'));
+			
 			var maxWidth = 0;
-			var subContLeft = 0;
 			$('.open').on('click', function(e){
-				$('.headerMainContainer').animate({top: 0}, 200);
-				maxWidth = $('.containerHeaderLinks').width();
-				subContLeft = $('.containerHeaderLinks').offset().left;
-				$('.subCrumbsCont').css('left', $('.containerHeaderLinks').offset().left);
-				$('.subCrumbsCont').width(maxWidth);
+				$('.headerMainContainer').animate({top: 0,left:0,width:100+'%',opacity:1}, 300, function(){
+					maxWidth = $('.containerHeaderLinks').width();
+					$('.subCrumbsCont').css('left', $('.containerHeaderLinks').offset().left);
+					$('.subCrumbsCont').width(maxWidth);
+					});
+				
 			});
 			$('.closeBtn').on('click',function(){
-				$('.headerMainContainer').animate({top: -100+'%'}, 200);
+				$('.headerMainContainer').animate({top: -101+'%',left:50+'%',width:0,opacity:0}, 300);
 			});
 			var windowHeight = $(window).height();
+			$('.mainBodyContainerFull').animate({
+				height: windowHeight+'px',
+				opacity:1
+				},
+				1000, function() {
+				
+			});
 			$('.headerMainContainer').height(windowHeight);
 			$('#headerLinkCont').height(windowHeight-80);
-			
-			/*$('.headerCrumbs').mouseenter(function(event) {
-				$(this).children('.subCrumbsCont').animate({
-					opacity: 1,
-				    left : subContLeft+'px',	
-				    width: maxWidth+'px',
-				    'z-index': 10, 
-				}, 400);
-			}).mouseleave(function(event) {
-				$(this).children('.subCrumbsCont').animate({
-					opacity: 0,
-				    left: 50+'%',
-				    width: 0+'px',
-				    'z-index': -1, 
-				}, 400);
-			});*/
+			/*.headerCrumbs:hover .subCrumbsCont*/
+			var timeout = null;
+			$(window).scroll(function () {
+			    if (!timeout) {
+			        timeout = setTimeout(function () {
+			            clearTimeout(timeout);
+			            timeout = null;
+			            if ($(window).scrollTop() >= 1000) {
+			                $('.bottomSticky').fadeIn();
+			            }else{
+			            	$('.bottomSticky').fadeOut();
+			            }
+			        }, 250);
+			    }
+			});
 		});
 	</script>
 </body>

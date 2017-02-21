@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/bootstrap.css">
     <link rel="stylesheet" href="style/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/style.css">
     <style>
@@ -26,11 +26,11 @@
 	<div class="headerMainContainer">
 		<div style="">
 			<div class="headerInner closeBtn" style="text-align: center;">
-				<span style="color: #CDCFD1;">
-					<i style="top: 4px;font-size: 24px;margin-right: 10px; transform: scale(1,1.5);font-weight: lighter;color: #000;" class="fa fa-times"></i>
+				<span style="color: #CDCFD1; cursor: pointer;">
+					<i style=" " class="">X</i>
 					<span class="headerOpenHoverImgCont">
-						<img src="images/Network18-logo-white.png" alt="" class="onHover">
-						<img src="images/Network-18-logo.png" alt="" class="notOnHover">
+						<img src="images/Network18logo_W.png" alt="" class="notOnHover">
+						<img src="images/Network18logo_K.png" alt="" class="onHover">
 					</span>
 				</span>
 			</div>
@@ -57,7 +57,7 @@
 						<span><img src="images/port.png" alt=""></span>
 						<p>Portfolio</p>
 						<div class="subCrumbsCont">
-							<a href="portfolio.html#portfolioNews" class="subCrumbsLinks">Newa</a>
+							<a href="portfolio.html#portfolioNews" class="subCrumbsLinks">News</a>
 							<a href="portfolio.html#portfolioEntertainment" class="subCrumbsLinks">Entertainment</a>
 							<a href="portfolio.html#portfolioDistribution" class="subCrumbsLinks">Distribution</a>
 							<a href="portfolio.html#portfolioMovies" class="subCrumbsLinks">Movies</a>
@@ -126,7 +126,7 @@
 		</div>
 	</div>
 	<div class="animateMainContainer" >
-		<div class="animateN18"><img src="images/Network18-logo-white.png" alt="" class=""></div>
+		<div class="animateN18"><img src="images/Network18logo_W.png" alt="" class=""></div>
 		<img src="images/Layer_3.png" alt="" class="animateBg">
 		<img src="images/pixalate.png" alt="" class="animateBg2">
 		<div class="animateTextCont">
@@ -204,18 +204,23 @@
     						});
     				});
     		});
-    		$('.open').on('click', function(e){
-				$('.headerMainContainer').animate({top: 0}, 200);
-				var maxWidth = $('.containerHeaderLinks').width();
-				$('.subCrumbsCont').css('left', $('.containerHeaderLinks').offset().left);
-				$('.subCrumbsCont').width(maxWidth);
+
+    		var maxWidth = 0;
+			$('.open').on('click', function(e){
+				$('.headerMainContainer').animate({top: 0,left:0,width:100+'%',opacity:1}, 300,function(){
+					maxWidth = $('.containerHeaderLinks').width();
+					$('.subCrumbsCont').css('left', $('.containerHeaderLinks').offset().left);
+					$('.subCrumbsCont').width(maxWidth);
+					});
+				
 			});
 			$('.closeBtn').on('click',function(){
-				$('.headerMainContainer').animate({top: -100+'%'}, 200);
+				$('.headerMainContainer').animate({top: -101+'%',left:50+'%',width:0,opacity:0}, 300);
 			});
 			var windowHeight = $(window).height();
 			$('.headerMainContainer').height(windowHeight);
 			$('#headerLinkCont').height(windowHeight-80);
+
     	});
     </script>
 </body>

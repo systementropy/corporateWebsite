@@ -100,10 +100,9 @@ body{
 	transform: rotate(0deg);
 }
 .centerIcon .badgeCont{
-	height: 32px;
-    width: 32px;
+	height: 40px;
+    width: 40px;
     display: inline-block;
-    background: #eee;
     border-radius: 50%;
     margin-top: 23%;
 }
@@ -113,7 +112,6 @@ body{
 }
 .centerIcon .badgeCont{
     margin-top: 30%;
-    background: #ccc;
 }
 .centerIcon .badgeCont i{
 	font-size: 20px;
@@ -122,7 +120,7 @@ body{
     transform-origin: 7px 20px;
     line-height: 40px;
     padding: 0px;
-    margin: -20px 0px 0 5px;
+    margin: 0px 0px 0 5px;
     transition: all 0.8s ease-in-out;
     color:#F93133;
     animation:myfirst 1s;
@@ -193,8 +191,8 @@ body{
     top: 50%;
     width: 100%;
 }
-.back h3{padding-top: 40px;margin:0;font-size: 40px;max-width: 400px;}
-.back p{max-width: 400px;}
+.back h3{padding-top: 40px;margin:0;font-size: 40px;max-width: 300px;}
+.back p{max-width: 300px;}
 /* .contentTypeDiv .back{display: none;} */
 
 .contentTypeDiv:hover .front{display: none}
@@ -246,6 +244,7 @@ body{
 	text-transform: uppercase;
 	text-align: center;
     font-family: 'Geogrotesque';
+    cursor: pointer;
 }
 .headerCrumbs:hover{color: #9b9b9b;}
 .subCrumbsCont{
@@ -314,8 +313,10 @@ a.subCrumbsLinks:hover{
 	background: url('../images/header_bg.png') center;
 	position: fixed;
 	top: -101%;
-	width: 100%;
+	width: 0%;
+    left: 50%;
 	z-index: 9999;
+    opacity: 0;
 }
 .headerPrimaryCont{
 	position: fixed;
@@ -329,10 +330,7 @@ a.subCrumbsLinks:hover{
     height: 45px;
     margin-top: 10px;
 }
-.headerPrimaryCont .pull-left a.homeLogoA img{
-    -webkit-filter: grayscale(0%);
-    transition: all 0.2s ease-in-out;
-}
+
 .headerInner.closeBtn{
     text-align: center;
     height: 45px;
@@ -352,21 +350,28 @@ a.subCrumbsLinks:hover{
 .headerInner.closeBtn>span i{
     position: absolute;
     left: 0px;
-    font-size: 24px;
     margin-right: 10px;
-    line-height: 33px;
+    line-height: 40px;
     display: inline-block;
     top: 3px;
     transition: all 0.2s ease-in-out;
-    transform: rotate(0deg);
+    font-style: normal;
+    top: 4px;
+    font-size: 32px;
+    margin-right: 10px; 
+    transform: rotate(0deg) ;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Glober bold';
 }
 .headerInner.closeBtn>span i:hover{
-    transform: rotate(90deg);
+    transform: rotate(90deg) ;
 }
 .headerOpenHoverImgCont{
     position: relative;
     width: 210px;
-    height: 35px;
+    height: 44px;
+    display: inline-block;
 }
 .headerOpenHoverImgCont img.notOnHover{
     display: block;
@@ -393,10 +398,13 @@ a.subCrumbsLinks:hover{
 .headerPrimaryCont .pull-left a.homeLogoA img{
     transition: all 0.2s ease-in-out;
     -webkit-filter: grayscale(0%);
+    transform: scale(1);
+    transition: all 0.4s ease-in-out;
 }
 .headerPrimaryCont .pull-left a.homeLogoA:hover img{
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
+    transform: scale(1.05);
 }
 .headerPrimaryCont .pull-right a>i {
     font-size: 22px;
@@ -508,7 +516,7 @@ img{
 	height: 0px;
 	clear: both;
 }
-.heroImgContainer{padding: 15px;}
+.heroImgContainer{padding: 15px;max-height: 400px; overflow: hidden;text-align: center;}
 .carousel-control{
 	width: 20px;
 	background: transparent !important;
@@ -563,7 +571,7 @@ ul.nav.nav-tabs.nav-texts>li>a{
 }
 
 ul.nav.nav-tabs.nav-lists{
-	width: 200px;
+	width: 54px;
 	margin: 0 auto;
 	border: 0;
 }
@@ -576,8 +584,8 @@ ul.nav.nav-tabs.nav-lists li{
 ul.nav.nav-tabs.nav-lists li>a{
 	background: transparent;
 	border: none;
-	width: 20px;
-    height: 20px;
+	width: 12px;
+    height: 14px;
     padding: 0;
 }
 ul.nav.nav-tabs.nav-lists li.active{
@@ -612,6 +620,7 @@ ul.nav.nav-tabs.nav-lists li.active{
 	line-height: 32px;
 	padding-left: 15px;
 	font-family: 'Glober bold';
+    text-align: center;
 }
 .statCont .bgH3{
 	background: #666666;
@@ -626,7 +635,7 @@ ul.nav.nav-tabs.nav-lists li.active{
 .portfolioMainCont .thumbnail .caption{color: #000;}
 .portfolioMainCont.small{height: 300px;}
 .portfolioMainCont .thumbnail.small{height: 250px;font-size: 100%;}
-.portfolioMainCont .thumbnail .caption h3, .distriThmb h3{font-size: 30px;font-weight: bold;text-align: center;}
+.portfolioMainCont .thumbnail .caption h3, .distriThmb h3{font-size: 30px;font-weight: bold;text-align: center;font-family: 'Glober bold';}
 .portfolioMainCont .thumbnail .caption p, .distriThmb p{font-size: 21px;}
 .portfolioMainCont .tab-pane {min-height: 500px;}
 .rdMorePortflo{font-size: 14px; text-transform: uppercase; color: #0033ff; font-weight: bold;}
@@ -693,7 +702,7 @@ span.dottdBrder {
 .relCont{position: relative;}
 .absCont{position: absolute;bottom: 0;}
 .boardDirMainCont{font-size: 21px;line-height: 28px;}
-.boardDirMainCont h3{font-weight: bold;font-size: 30px;line-height: normal;}
+.boardDirMainCont h3{font-weight: bold;font-size: 30px;line-height: normal;font-family: 'Glober xBold';text-transform: uppercase; margin: 40px 0 20px;}
 .boardDirMainCont p{margin-bottom: 60px;}
 .row.globalPartnerMainContainer.portfolioMainCont {
     margin: 60px -15px 0;
@@ -750,6 +759,26 @@ ul.barsCont li{
         max-height: none;
     }
 }
-
-
+.bottomSticky {
+    background: #ed1c24;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    line-height: 14px;
+    display: none;
+}
+.bottomSticky a,.bottomSticky a:hover{
+    color: #FFF;
+    text-decoration: none;
+}
+.bottomSticky i{
+    font-size: 40px;
+    color: #FFF;
+    line-height: 12px;
+}
+.mainBodyContainerFull{height: 0;opacity: 0;}
 

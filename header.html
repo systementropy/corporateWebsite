@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="style/bootstrap.css">
 	<link rel="stylesheet" href="style/font-awesome-4.7.0/css/font-awesome.min.css">
 	<title></title>
 	<style>
@@ -11,7 +11,7 @@
 </head>
 <body>
 		<div class="headerPrimaryCont container-fluid text-center">
-		<div class="col-md-5 text-left pull-left"><a class="homeLogoA" href="home.html"><img src="images/network18_icon.png" height="60px"></a></div>
+		<div class="col-md-5 text-left pull-left"><a class="homeLogoA" href="home.html"><img src="images/Network18logo_K.png" height="60px"></a></div>
 		<div class="col-md-2 text-center">
 			<button class="btn btn-large open">
 				<ul class="barsCont">
@@ -29,9 +29,15 @@
 		</div>
 	</div>
 	<div class="headerMainContainer">
-		<div style="">
+		 <div style="">
 			<div class="headerInner closeBtn" style="text-align: center;">
-				<span style=""><i style="" class="fa fa-times"></i><img src="images/ut.png" alt=""></span>
+				<span style="color: #CDCFD1; cursor: pointer;">
+					<i style=" " class="">X</i>
+					<span class="headerOpenHoverImgCont">
+						<img src="images/Network18logo_W.png" alt="" class="notOnHover">
+						<img src="images/Network18logo_K.png" alt="" class="onHover">
+					</span>
+				</span>
 			</div>
 		</div>
 		
@@ -56,7 +62,7 @@
 						<span><img src="images/port.png" alt=""></span>
 						<p>Portfolio</p>
 						<div class="subCrumbsCont">
-							<a href="portfolio.html#portfolioNews" class="subCrumbsLinks">Newa</a>
+							<a href="portfolio.html#portfolioNews" class="subCrumbsLinks">News</a>
 							<a href="portfolio.html#portfolioEntertainment" class="subCrumbsLinks">Entertainment</a>
 							<a href="portfolio.html#portfolioDistribution" class="subCrumbsLinks">Distribution</a>
 							<a href="portfolio.html#portfolioMovies" class="subCrumbsLinks">Movies</a>
@@ -129,19 +135,21 @@
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<script>
 		$(document).ready(function() {
+			$(document).ready(function() {
+			var maxWidth = 0;
 			$('.open').on('click', function(e){
-				$('.headerMainContainer').animate({top: 0}, 200);
-				var maxWidth = $('.containerHeaderLinks').width();
+				$('.headerMainContainer').animate({top: 0,left:0,width:100+'%',opacity:1}, 300);
+				maxWidth = $('.containerHeaderLinks').width();
 				$('.subCrumbsCont').css('left', $('.containerHeaderLinks').offset().left);
 				$('.subCrumbsCont').width(maxWidth);
 			});
 			$('.closeBtn').on('click',function(){
-				$('.headerMainContainer').animate({top: -100+'%'}, 200);
+				$('.headerMainContainer').animate({top: -101+'%',left:50+'%',width:0,opacity:0}, 300);
 			});
 			var windowHeight = $(window).height();
 			$('.headerMainContainer').height(windowHeight);
 			$('#headerLinkCont').height(windowHeight-80);
-			
+			/*.headerCrumbs:hover .subCrumbsCont*/
 			
 		});
 	</script>
