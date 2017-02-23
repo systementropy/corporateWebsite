@@ -5,6 +5,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="style/bootstrap.css">
 	<link rel="stylesheet" href="style/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="slick/slick.css"/>
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="icon" href="favicon.ico">
 </head>
@@ -146,15 +147,14 @@
 			
 			<div class="portfolioMainCont" id="portfolioNews">
 				<h1>News</h1>
-				<ul class="nav nav-tabs nav-texts" role="tablist">
-					<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Business News</a></li>
-					<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">General News</a></li>
-					<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Regional News</a></li>
-				</ul>
-
-				<div class="tab-content">
-					<div role="tabpanel" class="tab-pane active" id="home">
+				<div class="revolvingSlider">
+					<div class="itemThis" >
 						<div class="row">
+							<div class="revolveSliderHeader container-fluid text-center">
+								<div class="pull-left">Regional News</div>
+								<div class="pull-right">General News</div>
+								<div>Business News</div>
+							</div>
 							<div class="portfolioItem col-lg-4 col-md-4 col-sm-4">
 								<div class="thumbnail">
 									<div class="imgThmbCont"><img src="images/cnbc_logo.png" alt=""></div>
@@ -184,7 +184,12 @@
 							</div>
 						</div>
 					</div>
-					<div role="tabpanel" class="tab-pane" id="profile">
+					<div class="itemThis" >
+						<div class="revolveSliderHeader container-fluid text-center">
+							<div class="pull-left">Business News</div>
+							<div class="pull-right">Regional News</div>
+							<div>General News</div>
+						</div>
 						<div class="row">
 							<div class="portfolioItem col-lg-4 col-md-4 col-sm-4">
 								<div class="thumbnail">
@@ -215,7 +220,12 @@
 							</div>
 						</div>
 					</div>
-					<div role="tabpanel" class="tab-pane" id="messages">
+					<div class="itemThis" >
+						<div class="revolveSliderHeader container-fluid text-center">
+							<div class="pull-left">General News</div>
+							<div class="pull-right">Business News</div>
+							<div>Regional News</div>
+						</div>
 						<div class="row">
 							<div class="col-md-4 portfolioItem">
 								<div class="thumbnail borderRight">
@@ -237,7 +247,7 @@
 									</div>
 									<div class="clear"></div>
 									<div class="container-fluid">
-										<br><br><br>
+										
 										<div style="padding-bottom: 10px; border-bottom: 1px solid rgba(0,0,0,0.3); margin-bottom: 10px;">
 											<a href=""><img src="images/etvUrdu.png" alt=""></a>
 											<a href=""><img src="images/etvRaj.png" alt=""></a>
@@ -257,24 +267,20 @@
 							</div>
 						</div>
 					</div>
+					
 				</div>
-				<ul class="nav nav-tabs nav-lists" role="tablist">
-					<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"></a></li>
-					<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"></a></li>
-					<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"></a></li>
-				</ul>
 			</div>
 			<div class="portfolioMainCont" id="portfolioEntertainment">
 				<h1>Entertainment</h1>
-				<ul class="nav nav-tabs nav-texts" role="tablist">
-					<li role="presentation" class="active"><a href="#genEnt" aria-controls="genEnt" role="tab" data-toggle="tab">General Entertainment</a></li>
-					<li role="presentation"><a href="#factEnt" aria-controls="factEnt" role="tab" data-toggle="tab">Factual Entertainment</a></li>
-					<li role="presentation"><a href="#regEnt" aria-controls="regEnt" role="tab" data-toggle="tab">Regional Entertainment</a></li>
-				</ul>
-
-				<div class="tab-content">
-					<div role="tabpanel" class="tab-pane active" id="genEnt">
+				<div class="revolvingSlider">
+					<div class="itemThis" >
 						<div class="row">
+							<div class="revolveSliderHeader container-fluid text-center">
+								<div class="pull-left">Regional Entertainment</div>
+								<div class="pull-right">Factual Entertainment</div>
+								<div>General Entertainment</div>
+							</div>
+
 							<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
 								<div class="carousel-inner" role="listbox">
 									<div class="item active">
@@ -394,8 +400,13 @@
 							</div>
 						</div>
 					</div>
-					<div role="tabpanel" class="tab-pane" id="factEnt">
+					<div class="itemThis" >
 						<div class="row">
+							<div class="revolveSliderHeader container-fluid text-center">
+							<div class="pull-left">General Entertainment</div>
+							<div class="pull-right">Regional Entertainment</div>
+							<div>Factual Entertainment</div>
+						</div>
 							<div class="portfolioItem col-lg-4 col-md-4 col-sm-4">
 								<div class="thumbnail">
 									<div class="imgThmbCont"><img src="https://www.historyindia.com/sites/all/themes/history/images/common/logo.png" alt=""></div>
@@ -418,10 +429,14 @@
 								
 							</div>
 						</div>
-						
 					</div>
-					<div role="tabpanel" class="tab-pane" id="regEnt">
+					<div class="itemThis" >
 						<div class="row">
+							<div class="revolveSliderHeader container-fluid text-center">
+							<div class="pull-left">Factual Entertainment</div>
+							<div class="pull-right">General Entertainment</div>
+							<div>Regional Entertainment</div>
+						</div>
 							<div id="carousel-example-factEnt" class="carousel slide" data-ride="carousel" data-interval="false">
 								<div class="carousel-inner" role="listbox">
 									<div class="item active">
@@ -500,11 +515,6 @@
 						</div>
 					</div>
 				</div>
-				<ul class="nav nav-tabs nav-lists" role="tablist">
-					<li role="presentation" class="active"><a href="#genEnt" aria-controls="genEnt" role="tab" data-toggle="tab"></a></li>
-					<li role="presentation"><a href="#factEnt" aria-controls="factEnt" role="tab" data-toggle="tab"></a></li>
-					<li role="presentation"><a href="#regEnt" aria-controls="regEnt" role="tab" data-toggle="tab"></a></li>
-				</ul>
 			</div>
  			<div class="portfolioMainCont" id="portfolioDistribution">
  				<h1>Distribution</h1>
@@ -744,6 +754,7 @@
 </div>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script>
 		$(document).ready(function() {
 			var maxWidth = 0;
@@ -769,6 +780,32 @@
 			$('.headerMainContainer').height(windowHeight);
 			$('#headerLinkCont').height(windowHeight-80);
 			/*.headerCrumbs:hover .subCrumbsCont*/
+			$('.revolvingSlider').slick({
+				centerMode: true,
+				centerPadding: '60px',
+				slidesToShow: 1,
+				dots: true,
+				responsive: [
+				    {
+				      breakpoint: 768,
+				      settings: {
+				        arrows: false,
+				        centerMode: true,
+				        centerPadding: '40px',
+				        slidesToShow: 1
+				      }
+				    },
+				    {
+				      breakpoint: 480,
+				      settings: {
+				        arrows: false,
+				        centerMode: true,
+				        centerPadding: '40px',
+				        slidesToShow: 1
+				      }
+				    }
+				]
+			});
 			var timeout = null;
 			$(window).scroll(function () {
 			    if (!timeout) {
