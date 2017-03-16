@@ -541,13 +541,17 @@
             $('.closeBtn').on('click',function(){
                 $('.headerMainContainer').animate({top: -100+'%'}, 200);
             });
+            
             var windowHeight = $(window).height();
+            $('.mainBodyContainerFull').css({
+                
+                paddingTop: windowHeight+'px',
+            });
             $('.mainBodyContainerFull').animate({
-                height: windowHeight+'px',
-                opacity:1
+                paddingTop: 0+'px',
+                
                 },
                 1000, function() {
-                
             });
             $('.headerMainContainer').height(windowHeight);
             $('#headerLinkCont').height(windowHeight-80);

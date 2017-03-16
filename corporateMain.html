@@ -12,7 +12,7 @@
 	</style>
 </head>
 <body>
-<div class="mainBodyContainerFull">
+<div class="mainBodyContainerFull" style="padding-top: 0; opacity: 0; height: 0;">
 	<div class="headerPrimaryCont container-fluid text-center">
 		<div class="col-md-5 text-left pull-left"><a class="homeLogoA" href="home.html"><img src="images/Network18logo_K.png" height="60px"></a></div>
 		<div class="col-md-2 text-center">
@@ -148,29 +148,31 @@
 			</div>
 			<div class="row" id="compHist">
 				<h1 >Company History</h1>
-				<div class="pull-left borderCont">
-					<span class="circle"></span>
-					<span class="dottdBrder"></span>
-					<h3>1996</h3>
-					<p>Incorporated as a private limited company on February 16, 1996</p>
-				</div>
-				<div class="pull-left borderCont">
-					<span class="circle"></span>
-					<span class="dottdBrder"></span>
-					<h3>2006</h3>
-					<p>Name changed from SGA Finance & Management Services Private Limited to Network18 Fincap Private Limited in April 2006. Converted into a public limited company in November 2006</p>
-				</div>
-				<div class="pull-left borderCont">
-					<span class="circle"></span>
-					<span class="dottdBrder"></span>
-					<h3>2007</h3>
-					<p>Listed on the Bombay Stock Exchange and the National Stock Exchange in February 2007. Name changed from Network18 Fincap Limited to Network18 Media & Investments Limited in December 2007</p>
-				</div>
-				<div class="pull-left borderCont">
-					<span class="circle"></span>
-					<span class="dottdBrder"></span>
-					<h3>2014</h3>
-					<p>Ownership transferred to Independent Media Trust (IMT), of which Reliance Industries Limited (RIL) is the sole beneficiary, in July 2014</p>
+				<div class="historyCompContainer">
+					<div class="pull-left borderCont dispHallmarkCont" style="width: 18%;padding-right: 7%;">
+						<span class="circle"></span>
+						<span class="dottdBrder"></span>
+						<h3>1996</h3>
+						<p>Incorporated as a private limited company on February 16, 1996</p>
+					</div>
+					<div class="pull-left borderCont dispHallmarkCont">
+						<span class="circle"></span>
+						<span class="dottdBrder"></span>
+						<h3>2006</h3>
+						<p>Name changed from SGA Finance & Management Services Private Limited to Network18 Fincap Private Limited in April 2006. Converted into a public limited company in November 2006</p>
+					</div>
+					<div class="pull-left borderCont dispHallmarkCont" style="width: 30%;">
+						<span class="circle"></span>
+						<span class="dottdBrder"></span>
+						<h3>2007</h3>
+						<p>Listed on the Bombay Stock Exchange and the National Stock Exchange in February 2007. Name changed from Network18 Fincap Limited to Network18 Media & Investments Limited in December 2007</p>
+					</div>
+					<div class="pull-left borderCont dispHallmarkCont" style="width: 22%;padding-left: 4%;">
+						<span class="circle"></span>
+						<span class="dottdBrder" style="left: 61px;"></span>
+						<h3>2014</h3>
+						<p>Ownership transferred to Independent Media Trust (IMT), of which Reliance Industries Limited (RIL) is the sole beneficiary, in July 2014</p>
+					</div>
 				</div>
 			</div>
 			<div class="row">
@@ -529,8 +531,39 @@
 				opacity:1
 				},
 				1000, function() {
-				
-			});
+					/*$('.historyCompContainer').animate({
+						width: 100+'%'},
+						1000, function() {
+							$('.historyCompContainer').css({
+								'overflow': 'inherit',
+								'height': 'auto'
+							});*/
+							$('.dispHallmarkCont:eq(0)').animate({
+								opacity: 1,
+								},
+								300, function() {
+									$('.dispHallmarkCont:eq(1)').animate({
+										opacity: 1,
+										},
+										300, function() {
+											$('.dispHallmarkCont:eq(2)').animate({
+												opacity: 1,
+												},
+												300, function() {
+													$('.dispHallmarkCont:eq(3)').animate({
+														opacity: 1,
+														},
+														300, function() {
+														
+													});
+											});
+									});
+							});
+
+						/*}
+					);*/
+				}
+			);
 			$('.headerMainContainer').height(windowHeight);
 			$('#headerLinkCont').height(windowHeight-80);
 			/*.headerCrumbs:hover .subCrumbsCont*/
