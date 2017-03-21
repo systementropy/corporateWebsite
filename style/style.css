@@ -248,6 +248,14 @@ body{
     cursor: pointer;
 }
 .headerCrumbs:hover{color: #dcdcdc;}
+.headerCrumbs>p{
+    transform: scale(1);
+    margin: 0 0 20px 0;
+    transition: all 0.4s ease-in-out;
+}
+.headerCrumbs:hover>p{
+    transform: scale(1.25);
+}
 .subCrumbsCont{
     position: absolute;
     transition: all 0.4s ease-in-out;
@@ -257,12 +265,15 @@ body{
     width: 0;
     z-index: -1;
 }
+
 .headerCrumbs:hover .subCrumbsCont{
-    /* height: auto; */
     opacity: 1;
     bottom: 45px;
     width: 100%;
     z-index: 10; 
+}
+.headerCrumbs:hover .subCrumbsCont.small{
+    bottom: 55px;
 }
 a.subCrumbsLinks {
     color: inherit;
@@ -275,9 +286,12 @@ a.subCrumbsLinks {
     height: 58px;
     text-transform: uppercase;
 	font-size: 18px;
-	padding: 15px;
-    transition: all 0.2s ease-in-out;
+	padding: 9px 15px;
+    transition: all 0.4s ease-in-out;
     line-height: 20px;
+}
+.subCrumbsCont.small a.subCrumbsLinks{
+    height: 38px;
 }
 a.subCrumbsLinks:last-child{
     border: none;
