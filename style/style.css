@@ -120,16 +120,14 @@ body{
 .centerIcon .badgeCont{
 	height: 40px;
     width: 40px;
-    display: inline-block;
     border-radius: 50%;
-    margin-top: 23%;
 }
 .centerIcon .badgeCont:hover i{
 	color: #F93133;
 	transform: rotate(360deg) scale(1.5);
 }
 .centerIcon .badgeCont{
-    margin-top: 30%;
+    margin:auto;
 }
 .centerIcon .badgeCont i{
 	font-size: 20px;
@@ -173,8 +171,8 @@ body{
 }
 .inner a.hoverLinks.maxWH .colorImg{
     margin: 0;
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 90%;
+    max-height: 90%;
     margin: 10% auto 10%;
 }
 .clearAfter:after{
