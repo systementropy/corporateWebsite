@@ -170,10 +170,9 @@ body{
     height: 100%;
 }
 .inner a.hoverLinks.maxWH .colorImg{
-    margin: 0;
     max-width: 90%;
     max-height: 90%;
-    margin: 10% auto 10%;
+    margin: auto;
 }
 .clearAfter:after{
 	content: " ";
@@ -458,6 +457,7 @@ a.subCrumbsLinks:hover{
 .animateN18{
 	position: absolute;
 	top: 45%;
+    transform: translateY(-50%);
 	width: 100%;
     text-align: center;
 	height: 0;
@@ -635,7 +635,9 @@ ul.nav.nav-tabs.nav-lists li.active{
 	height: 150px;
 	width: 100%;
 	text-align: center;
+    display: flex;
 }
+.imgThmbCont img{margin:auto;}
 .portfolioItem .thumbnail {
     
     margin: 0;
@@ -766,6 +768,8 @@ span.dottdBrder {
 .statCont.noborder{border-left: none;}
 .sectionalCont>p{font-weight: bold;font-size: 30px;}
 .sectionalCont .col-md-4,.sectionalCont .col-md-6{height: 80px;margin: 15px 0; text-align: center;}
+.sectionalCont .col-md-4 a,.sectionalCont .col-md-6 a{display: flex; height: 100%;width: 100%;}
+.sectionalCont .col-md-4 img,.sectionalCont .col-md-6 img{margin:auto;}
 .borderCont h3{font-weight: bold;font-size: 30px;}
 .relCont{position: relative;}
 .absCont{position: absolute;bottom: 0;}
@@ -871,7 +875,10 @@ ul.barsCont li{
     opacity: 1;
 }
 .thumbnail{background: inherit;}
-.slick-slide img{display: initial !important;}
+.slick-slide img{display: initial !important;margin:auto;}
+.slick-list.draggable {
+    padding: 0 !important;
+}
 .revolvingSlider>button{
     background: transparent;
     border: none;
