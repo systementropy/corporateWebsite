@@ -917,3 +917,65 @@ ul.slick-dots li{
 ul.slick-dots li>button:focus,ul.slick-dots li>button:active{outline: none;}
 ul.slick-dots li>button{border:none;background: #EEE;height: 12px; width: 12px;border-radius: 50%;}
 ul.slick-dots li.slick-active>button{background: #ed1c24;height: 14px; width: 14px;}
+
+
+
+
+
+
+
+
+
+
+.timelineFlexCont{
+    border-top: 4px solid ;
+    display: flex;
+    line-height: 40px;
+    padding-bottom: 100px;
+    margin-top: 100px;
+    color: #666;
+}
+.timeline-label{
+    font-size: 16px;
+    flex:1;
+    position: relative; 
+    top: -44px;
+    line-height: 40px;
+    border-bottom: 4px solid;
+}
+span.circle-flex {
+    background: #fff;
+    border: 1px solid;
+    height: 10px;
+    width: 10px;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    left: 20px;
+    top: -7px;
+    transform: translate(-50%);
+    z-index: 1;
+    
+}
+
+.timeline-label:nth-child(odd) span.circle-flex{
+    top: 37px;
+}
+span.dotted-flex {
+    height: 14px;
+    position: absolute;
+    border: 1px dotted;
+    left: 20px;
+    transform: translate(-50%);
+
+}
+.timeline-label:nth-child(odd) span.dotted-flex{
+    top: 26px;
+}
+.timeline-label.active{
+    border-color:#C92929;
+}
+.timeline-label.active span.circle-flex{
+    border-color: #0033FF;
+    background: #0033FF;
+}
