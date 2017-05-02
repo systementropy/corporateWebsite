@@ -658,7 +658,9 @@
 					$(this).addClass('active');
 				}
 			}).on('mouseleave', function(event){
-
+				if($(this).hasClass('active')){
+					$(this).removeClass('active');
+				}
 			});
 		});
 	</script>
