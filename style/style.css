@@ -982,3 +982,5 @@ span.dotted-flex {
     left: 15px;
     transform: scale(1.5);
 }
+
+.timeline-label.six span.circle-flex {top: 38px;}
