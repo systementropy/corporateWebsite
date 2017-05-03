@@ -984,3 +984,19 @@ span.dotted-flex {
 }
 
 .timeline-label.six span.circle-flex {top: 38px;}
+
+
+
+.video-cont{
+    position: relative;
+    overflow: hidden;
+    height: 60vh;
+    width: 100vw;
+}
+.vid-bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: rgba(255,0,0,0.4);
+}
