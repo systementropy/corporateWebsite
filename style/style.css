@@ -955,7 +955,7 @@ span.circle-flex {
     top: -7px;
     transform: translate(-50%);
     z-index: 1;
-    
+    transition: all 0.4s ease-in-out;
 }
 
 .timeline-label:nth-child(odd) span.circle-flex{
@@ -974,8 +974,11 @@ span.dotted-flex {
 }
 .timeline-label.active{
     border-color:#C92929;
+
 }
 .timeline-label.active span.circle-flex{
     border-color: #0033FF;
     background: #0033FF;
+    left: 15px;
+    transform: scale(1.2);
 }
