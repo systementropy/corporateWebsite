@@ -656,11 +656,22 @@
 			$('.timeline-label').on('mouseenter', function(event) {
 				if ($(this).hasClass('one')) {
 					$(this).addClass('active');
+					$(this).siblings('.one').addClass('active');
+				}else if ($(this).hasClass('two')) {
+					$(this).addClass('active');
+					$(this).siblings('.two').addClass('active');
 				}
+
 			}).on('mouseleave', function(event){
-				if($(this).hasClass('active')){
-					$(this).removeClass('active');
-				}
+				$(this).removeClass('active');
+				$(this).siblings('.timeline-label').removeClass('active');
+				// if($(this).hasClass('active')){
+				// 	$(this).removeClass('active');
+				// 	$(this).siblings('.one').removeClass('active');
+				// }else if($(this).hasClass('active')){
+				// 	$(this).removeClass('active');
+				// 	$(this).siblings('.timeline-label').removeClass('active');
+				// }
 			});
 		});
 	</script>
