@@ -226,6 +226,7 @@
 							
 						</div>
 					</div>
+					<div class="flex-white-bg"></div>
 					<div class="flex-dropdown">
 						<div class="flex-drop-opt opt1">
 							<span></span>
@@ -658,6 +659,7 @@
 				if ($(this).hasClass('one')) {
 					$(this).addClass('active');
 					$(this).siblings('.one').addClass('active');
+					$('.opt1').addClass('active');
 				}else if ($(this).hasClass('two')) {
 					$(this).addClass('active');
 					$(this).siblings('.two').addClass('active');
@@ -679,6 +681,7 @@
 
 			}).on('mouseleave', function(event){
 				$(this).removeClass('active');
+				$('.flex-drop-opt').removeClass('active');
 				$(this).siblings('.timeline-label').removeClass('active');
 				// if($(this).hasClass('active')){
 				// 	$(this).removeClass('active');
