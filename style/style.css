@@ -638,7 +638,7 @@ ul.nav.nav-tabs.nav-lists li.active{
 .portfolioItem div.thumbnail.second{border-right: 1px solid #999;border-left: 1px solid #999;}
 .  div.thumbnail.borderRight{border-right: 1px solid #999;}
 .portfolioItem div.thumbnail.borderLeft{border-left: 1px solid #999;}
-.portfolioMainCont h1, .corpMainCont h1{font-family: 'Glober xBold'; color: #ACACAC; font-size: 90px;}
+.portfolioMainCont h1, .corpMainCont h1{font-family: 'Glober xBold'; color: #ACACAC; font-size: 90px;background: #FFF; margin:0; padding: 40px 0 0;}
 div#brdDirInt>div.col-md-3 {
     padding: 0 45px;
 }
@@ -989,6 +989,7 @@ span.bottom-dot-flex {
 
 .historyCompContainer {
     position: relative;
+    height: 300px;
 }
 .video-cont{
     position: relative;
@@ -1113,3 +1114,35 @@ span.bottom-dot-flex {
     height: 64px;
     padding: 2px 10px;
 }
+.flex-dropdown.flex-dropdown-two {
+    display: inherit;
+    position: relative;
+    top: -572px;
+    height: 340px;
+}
+.flex-dropdown-brand {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(0%);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.flex-dropdown-brand.active {
+    opacity: 1;
+    transform: translateY(100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/******************END**********************/

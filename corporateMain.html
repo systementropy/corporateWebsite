@@ -246,7 +246,7 @@
 						</div>
 					</div>
 					<div class="flex-dropdown flex-dropdown-two">
-						<div class="flex-dropdown-brand">
+						<div class="flex-dropdown-brand opt5">
 							<div class="headerBg bgH3 flex-cont flex-dropdown-header">
 								<span class="">1999-2005</span>
 								<p class="">Launched our new business</p>
@@ -278,7 +278,7 @@
 							</div>
 							
 						</div>
-						<div class="flex-dropdown-brand">
+						<div class="flex-dropdown-brand opt6">
 							<div class="headerBg bgH3 flex-cont flex-dropdown-header">
 								<span class="">2005-2011</span>
 								<p class="">Building the entertainment and digital business entry into new spaces - films, home shopping</p>
@@ -358,7 +358,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="flex-dropdown-brand">
+						<div class="flex-dropdown-brand opt7">
 							<div class="headerBg bgH3 flex-cont flex-dropdown-header">
 								<span class="">2012+</span>
 								<p class="">Leadership in the broadcasting businessriding the digital wave...</p>
@@ -685,12 +685,14 @@
 					$('.opt1').addClass('active');
 				}else if ($(this).hasClass('two')) {
 					$(this).addClass('active');
+					$('.opt5').addClass('active');
 					$(this).siblings('.two').addClass('active');
 				}else if ($(this).hasClass('three')) {
 					$(this).addClass('active');
 					$(this).siblings('.three ').addClass('active');
 				}else if ($(this).hasClass('four')) {
 					$(this).addClass('active');
+					$('.opt7').addClass('active');
 					$(this).siblings('.four').addClass('active');
 				}else if ($(this).hasClass('five')) {
 					$(this).addClass('active');
@@ -707,6 +709,7 @@
 			}).on('mouseleave', function(event){
 				$(this).removeClass('active');
 				$('.flex-drop-opt').removeClass('active');
+				$('.flex-dropdown-brand').removeClass('active');
 				$(this).siblings('.timeline-label').removeClass('active');
 				// if($(this).hasClass('active')){
 				// 	$(this).removeClass('active');
