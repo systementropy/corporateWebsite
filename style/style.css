@@ -1041,7 +1041,7 @@ span.bottom-dot-flex {
 }
 .flex-drop-opt span {
     font-weight: bold;
-    font-family: Glober xBold;
+    font-family: 'Glober xBold';
 }
 .flex-drop-opt.opt2 {
     left: 30%;
@@ -1049,4 +1049,55 @@ span.bottom-dot-flex {
     transform: translateX(1%);
 }
 .flex-drop-opt.opt3 {
+}
+.flex-cont{
+    display: flex;
+}
+
+
+
+
+.flex-dropdown-header span{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    padding-right: 24px;
+}
+.flex-dropdown-header p{
+    font-size: 21px;
+    line-height: 32px;
+    opacity: 0.8;
+    margin:0;
+}
+.sectionalCont.pull-left .col-md-3{
+    height: 80px;
+    width: 120px;
+    display: flex;
+    padding:5px 15px;
+}
+.sectionalCont.pull-left .col-md-3 a {
+    display: flex;
+}
+.sectionalCont.pull-left .col-md-3 a img {
+    margin: auto;
+}
+
+.sectionalCont.pull-left p {
+    font-size: 21px;
+    text-transform: uppercase;
+    line-height: 21px;
+    margin: 15px 0;
+}
+.sectionalCont.pull-left {
+    padding-left: 24px;
+}
+.sectionalCont.pull-left:first-child {padding:0;}
+.sectionalCont.pull-left p span {
+    padding: 0 15px;
+    text-align: center;
+    background: #E3E3E3;
+    line-height: 18px;
+    display: inline-block;
+    font-weight: bold;
+    font-family: 'Glober xBold';
 }
