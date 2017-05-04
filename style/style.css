@@ -50,18 +50,6 @@ body{
     padding: 0;
 }
 /* ++++++++++++++++++++++++++++++++++++++ LOADING SPRITE CLASSES++++++++++++++++++++++++++++++++++++++ */
-.colorBg{
-    background: url('../images/SpriteSheet.gif') 2540px -53px;
-    height: 100px;
-    width: 140px;
-    display: block;
-
-}
-
-
-
-
-
 
 
 
@@ -1052,13 +1040,13 @@ span.bottom-dot-flex {
     z-index: -1;
 }
 .flex-drop-opt span {
-    
+    font-weight: bold;
+    font-family: Glober xBold;
 }
 .flex-drop-opt.opt2 {
-    left: 36%;
+    left: 30%;
     z-index: 100;
     transform: translateX(1%);
 }
 .flex-drop-opt.opt3 {
-    left: 10%;
 }
