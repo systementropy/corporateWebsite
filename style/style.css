@@ -1074,6 +1074,7 @@ span.bottom-dot-flex {
     width: 120px;
     display: flex;
     padding:5px 15px;
+    margin:10px 0;
 }
 .sectionalCont.pull-left .col-md-3 a {
     display: flex;
@@ -1100,4 +1101,15 @@ span.bottom-dot-flex {
     display: inline-block;
     font-weight: bold;
     font-family: 'Glober xBold';
+}
+.flex-dropdown.flex-dropdown-two {
+    display: inherit;
+}
+.flex-dropdown-brand:last-child{
+    color: #000;
+}
+.flex-dropdown-brand:last-child .sectionalCont.pull-left .col-md-3{
+    width: 80px;
+    height: 64px;
+    padding: 2px 10px;
 }
