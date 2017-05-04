@@ -984,7 +984,7 @@ span.bottom-dot-flex {
 }
 
 
-.timeline-label.six span.circle-flex {top: 38px;}
+.timeline-label-odd span.circle-flex {top: 38px;}
 
 
 .historyCompContainer {
@@ -1127,7 +1127,10 @@ span.bottom-dot-flex {
     opacity: 0;
     transition: all 0.4s ease-in-out;
 }
-
+.timeline-label-range span.circle-flex{
+    border-color: #0033FF;
+    background: #0033FF;
+}
 
 .flex-dropdown-brand.active {
     opacity: 1;
