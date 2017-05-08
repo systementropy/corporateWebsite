@@ -260,10 +260,11 @@ body{
     margin: 0 0 20px 0;
     transition: all 0.4s ease-in-out;
 }
-.headerCrumbs span{transition: all 0.4s ease-in-out;}
+.headerCrumbs span{transition: all 0.4s ease-in-out;transform: scale(1);}
 .headerCrumbs:hover>p{
     transform: scale(1.25);
 }
+.headerCrumbs:hover >span{transform: scale(1.25);}
 .subCrumbsCont{
     position: absolute;
     transition: all 0.4s ease-in-out;
@@ -643,7 +644,15 @@ ul.nav.nav-tabs.nav-lists li.active{
 .portfolioItem div.thumbnail.second{border-right: 1px solid #999;border-left: 1px solid #999;}
 .  div.thumbnail.borderRight{border-right: 1px solid #999;}
 .portfolioItem div.thumbnail.borderLeft{border-left: 1px solid #999;}
-.portfolioMainCont h1, .corpMainCont h1{font-family: 'Glober xBold'; color: #ACACAC; font-size: 90px;background: #FFF; margin:0; padding: 40px 0 0;}
+.portfolioMainCont h1, .corpMainCont h1{
+    font-family: 'Glober xBold';
+    color: #ACACAC; 
+    font-size: 90px;
+    background: 
+    #FFF; 
+    margin:0; 
+    padding: 40px 0 0;
+}
 div#brdDirInt>div.col-md-3 {
     padding: 0 45px;
 }
@@ -668,7 +677,12 @@ div#brdDirInt>div.col-md-3 {
 .portfolioMainCont .thumbnail .caption{color: #000;padding: 0;}
 .portfolioMainCont.small{height: 300px;}
 .portfolioMainCont .thumbnail.small{height: 250px;font-size: 100%;}
-.portfolioMainCont .thumbnail .caption h3, .distriThmb h3{font-size: 30px;font-weight: bold;text-align: center;font-family: 'Glober xBold';}
+.portfolioMainCont .thumbnail .caption h3, .distriThmb h3{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Glober xBold';
+}
 .portfolioMainCont .thumbnail .caption p, .distriThmb p{font-size: 21px;}
 .portfolioMainCont .tab-pane {min-height: 500px;}
 .rdMorePortflo{font-size: 14px; text-transform: uppercase; color: #0033ff; font-weight: bold;}
@@ -767,7 +781,13 @@ span.dottdBrder {
 .relCont{position: relative;}
 .absCont{position: absolute;bottom: 0;}
 .boardDirMainCont{font-size: 21px;line-height: 28px;}
-.boardDirMainCont h3{font-weight: bold;font-size: 30px;line-height: normal;font-family: 'Glober xBold';text-transform: uppercase; margin: 40px 0 20px;}
+.boardDirMainCont h3{font-weight: bold;
+    font-size: 30px;
+    line-height: normal;
+    font-family: 'Glober xBold';
+    text-transform: uppercase;
+    margin: 40px 0 20px;
+}
 .boardDirMainCont p{margin-bottom: 120px;}
 .row.globalPartnerMainContainer.portfolioMainCont {
     margin: 60px -15px 0;
