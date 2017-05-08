@@ -1137,7 +1137,13 @@ span.bottom-dot-flex {
     transform: translateY(100%);
 }
 
-
+.timeline-label.semi-active.semi-three.active .circle-flex,.timeline-label.semi-active.semi-four.active .circle-flex {
+    background: #FFF;
+    border: 1px solid;
+}
+.timeline-label.semi-active.semi-three.active .bottom-dot-flex,.timeline-label.semi-active.semi-four.active .bottom-dot-flex {
+    height: 0;
+}
 
 
 
