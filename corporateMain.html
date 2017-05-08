@@ -671,6 +671,11 @@
 			$('.headerMainContainer').height(windowHeight);
 			$('#headerLinkCont').height(windowHeight-80);
 			/*.headerCrumbs:hover .subCrumbsCont*/
+			$('.headerCrumbs').on('mouseenter',function(e){
+				$(this).siblings('div').addClass('diminsh');
+			}).on('mouseleave',function(e){
+				$(this).siblings('div').removeClass('diminsh');
+			});
 			var timeout = null;
 			$(window).scroll(function () {
 			    if (!timeout) {
