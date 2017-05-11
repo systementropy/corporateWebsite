@@ -527,21 +527,11 @@
         </div>
     </div>
 </div>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
 
     <script>
         $(document).ready(function() {
-            $('.open').on('click', function(e){
-                $('.headerMainContainer').animate({top: 0}, 200);
-                var maxWidth = $('.containerHeaderLinks').width();
-                $('.subCrumbsCont').css('left', $('.containerHeaderLinks').offset().left);
-                $('.subCrumbsCont').width(maxWidth);
-            });
-            $('.closeBtn').on('click',function(){
-                $('.headerMainContainer').animate({top: -100+'%'}, 200);
-            });
-            
+
             var windowHeight = $(window).height();
             $('.mainBodyContainerFull').css({
                 
@@ -553,12 +543,8 @@
                 },
                 1000, function() {
             });
-            $('.headerMainContainer').height(windowHeight);
-            $('#headerLinkCont').height(windowHeight-80);
-
-
             var windowWidth = $(window).width();
-            console.log(windowHeight, windowWidth);
+            //console.log(windowHeight, windowWidth);
             if (windowWidth > 1024 && windowHeight > 768) {
                 var innerHeight = (windowHeight - 128) / 8;
                 $('.inner').css({
